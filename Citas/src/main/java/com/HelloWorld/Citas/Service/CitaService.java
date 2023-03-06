@@ -9,7 +9,7 @@ public interface CitaService {
     void alta(Cita cita);
     void baja(int id);
 
-    List<Cita> Listar();
+    List<Cita> listar();
 
 
 }

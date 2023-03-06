@@ -19,7 +19,7 @@ public class CitasServiceImpl implements CitaService {
     }
 
     @Override
-    public List<Cita> Listar() {
+    public List<Cita> listar() {
         return null;
     }
 
