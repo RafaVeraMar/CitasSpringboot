@@ -2,6 +2,7 @@ package com.HelloWorld.Citas.infra.console;
 
 import com.HelloWorld.Citas.Models.Cita;
 import com.HelloWorld.Citas.Service.CitaService;
+import com.HelloWorld.Citas.Service.impl.CitasServiceImpl;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -13,6 +14,11 @@ import java.util.Scanner;
 public class ConsoleReader {
     CitaService citaService;
     SimpleDateFormat fechaFormateador = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.forLanguageTag("es_ES"));
+
+    public ConsoleReader(CitasServiceImpl citasService) {
+
+    }
+
     public void init() {
         Scanner sc = new Scanner(System.in);
         int opcion = 1;
