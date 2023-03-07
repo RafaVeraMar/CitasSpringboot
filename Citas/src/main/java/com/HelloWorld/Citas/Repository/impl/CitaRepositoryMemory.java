@@ -25,6 +25,6 @@ public class CitaRepositoryMemory implements CitaRepository {
 
     @Override
     public List<Cita> Listar() {
-        return null;
+        return citas;
     }
 }

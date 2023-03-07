@@ -8,10 +8,10 @@ import com.HelloWorld.Citas.Service.CitaService;
 import java.util.List;
 
 public class CitasServiceImpl implements CitaService {
-    CitaRepository citaRepository;
+    private CitaRepository citaRepository;
 
-    public CitasServiceImpl(CitaRepositoryMemory citaRepositoryMemory) {
-
+    public CitasServiceImpl(CitaRepository citaRepository) {
+        this.citaRepository = citaRepository;
     }
 
     @Override
@@ -25,7 +25,7 @@ public class CitasServiceImpl implements CitaService {
 
     @Override
     public List<Cita> listar() {
-        return null;
+        return citaRepository.Listar();
     }
 
 }
